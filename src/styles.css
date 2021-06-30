@@ -59,3 +59,88 @@ button {
   margin: 20px;
   width: 480px;
 }
+
+.destroyer_container {
+  background-color: rgb(147, 255, 85);
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  width: 80px;
+}
+
+.destroyer_container_vertical {
+  background-color: rgb(147, 255, 85);
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  margin: 10px;
+  width: 40px;
+}
+
+.submarine_container {
+  background-color: rgb(255, 85, 190);
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  width: 120px;
+}
+
+.submarine_container_vertical {
+  background-color: rgb(255, 85, 190);
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  margin: 10px;
+  width: 40px;
+}
+
+.cruiser_container {
+  background-color: rgb(193, 85, 255);
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  width: 120px;
+}
+
+.cruiser_container_vertical {
+  background-color: rgb(193, 85, 255);
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  margin: 10px;
+  width: 40px;
+}
+
+.battleship_container {
+  background-color: rgb(13, 22, 146);
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  width: 160px;
+}
+
+.battleship_container_vertical {
+  background-color: rgb(13, 22, 146);
+  display: flex;
+  flex-wrap: wrap;
+  height: 160px;
+  margin: 10px;
+  width: 40px;
+}
+
+.carrier_container {
+  background-color: rgb(255, 187, 85);
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  width: 200px;
+}
+
+.carrier_container_vertical {
+  background-color: rgb(255, 187, 85);
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  margin: 10px;
+  width: 40px;
+}
