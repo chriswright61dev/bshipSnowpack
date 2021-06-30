@@ -1,12 +1,7 @@
 // import many of these
+import { gridWidth, gridHeight } from "../../data/data";
 
-export function createBoard(
-  gridName,
-  cellsArray,
-  gridWidth,
-  gridHeight,
-  idname
-) {
+export function createBoard(gridName, cellsArray, idname) {
   // cellsArray should be an empty array so empty it to make sure
   cellsArray.length = 0;
 

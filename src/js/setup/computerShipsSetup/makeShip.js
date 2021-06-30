@@ -1,6 +1,8 @@
 import { randMAbsolute, randomDirection } from "../../utilities/utilities";
 import { testShipPosition } from "./testShipPosition";
-export function makeShip(shipData, computerCellsArray, gridWidth, gridHeight) {
+import { gridWidth, gridHeight } from "../../data/data";
+
+export function makeShip(shipData, computerCellsArray) {
   const shipDirection = randomDirection();
 
   // console.log("shipDirection", shipDirection);

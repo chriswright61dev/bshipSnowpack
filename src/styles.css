@@ -78,7 +78,8 @@ button {
 }
 
 .destroyer_container {
-  background-color: rgb(147, 255, 85);
+  /* background-color: rgb(147, 255, 85); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   height: 40px;
   margin: 10px;
@@ -86,7 +87,8 @@ button {
 }
 
 .destroyer_container_vertical {
-  background-color: rgb(147, 255, 85);
+  /* background-color: rgb(147, 255, 85); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   flex-wrap: wrap;
   height: 80px;
@@ -95,7 +97,8 @@ button {
 }
 
 .submarine_container {
-  background-color: rgb(255, 85, 190);
+  /* background-color: rgb(255, 85, 190); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   height: 40px;
   margin: 10px;
@@ -103,7 +106,8 @@ button {
 }
 
 .submarine_container_vertical {
-  background-color: rgb(255, 85, 190);
+  /* background-color: rgb(255, 85, 190); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   flex-wrap: wrap;
   height: 120px;
@@ -112,7 +116,8 @@ button {
 }
 
 .cruiser_container {
-  background-color: rgb(193, 85, 255);
+  /* background-color: rgb(193, 85, 255); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   height: 40px;
   margin: 10px;
@@ -120,7 +125,8 @@ button {
 }
 
 .cruiser_container_vertical {
-  background-color: rgb(193, 85, 255);
+  /* background-color: rgb(193, 85, 255); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   flex-wrap: wrap;
   height: 120px;
@@ -129,7 +135,8 @@ button {
 }
 
 .battleship_container {
-  background-color: rgb(13, 22, 146);
+  /* background-color: rgb(13, 22, 146); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   height: 40px;
   margin: 10px;
@@ -137,7 +144,8 @@ button {
 }
 
 .battleship_container_vertical {
-  background-color: rgb(13, 22, 146);
+  /* background-color: rgb(13, 22, 146); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   flex-wrap: wrap;
   height: 160px;
@@ -146,7 +154,8 @@ button {
 }
 
 .carrier_container {
-  background-color: rgb(255, 187, 85);
+  /* background-color: rgb(255, 187, 85); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   height: 40px;
   margin: 10px;
@@ -154,7 +163,8 @@ button {
 }
 
 .carrier_container_vertical {
-  background-color: rgb(255, 187, 85);
+  /* background-color: rgb(255, 187, 85); */
+  background-color: rgb(245, 232, 213);
   display: flex;
   flex-wrap: wrap;
   height: 200px;
@@ -163,27 +173,35 @@ button {
 }
 
 .destroyer {
-  background-color: rgb(147, 255, 85);
+  /* background-color: rgb(147, 255, 85); */
+  /* background-color: rgb(245, 232, 213); */
 }
 
 .submarine {
-  background-color: rgb(255, 85, 190);
+  /* background-color: rgb(255, 85, 190); */
+  /* background-color: rgb(245, 232, 213); */
 }
 
 .cruiser {
-  background-color: rgb(193, 85, 255);
+  /* background-color: rgb(193, 85, 255); */
+  /* background-color: rgb(245, 232, 213); */
 }
 
 .battleship {
-  background-color: rgb(13, 22, 146);
+  /* background-color: rgb(13, 22, 146); */
+  /* background-color: rgb(245, 232, 213); */
 }
 
 .carrier {
-  background-color: rgb(255, 187, 85);
+  /* background-color: rgb(255, 187, 85); */
+  /* background-color: rgb(245, 232, 213); */
 }
 .cell_taken {
-  /* background-color: rgb(139, 15, 11); */
-  border: rgb(13, 22, 146) solid 2px;
+  background-color: rgb(243, 245, 161);
+}
+
+.playerShip {
+  background-color: rgb(104, 90, 89);
 }
 
 .hide {

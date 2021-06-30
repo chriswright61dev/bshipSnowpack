@@ -43,7 +43,7 @@ export function horizontalSetup(
 
       playerCellsArray[
         droppedOnCellId - selectedShipIndex + index
-      ].classList.add("cell_taken", shipName);
+      ].classList.add("cell_taken", shipName, "playerShip");
     }
     chooseShipsGrid.removeChild(draggedShipContainer);
   }

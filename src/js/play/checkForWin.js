@@ -1,52 +1,87 @@
 import { gameDataObject } from "../data/data";
 import { gameOver } from "./gameOver";
-import { displayTurn, displayInfo } from "../utilities/displayThings";
+import {
+  displayTurn,
+  displayInfo,
+  displayPlayerInfo,
+  displayComputerInfo,
+} from "../utilities/displayThings";
 
 export function checkForWin() {
   console.log("checking for wins");
   console.log("gameDataObject", gameDataObject);
-  if (gameDataObject.DestroyerCellsShotbyPlayer === 2) {
-    displayInfo("You sank the computers destroyer");
+  if (
+    gameDataObject.DestroyerCellsShotbyPlayer === 2 &&
+    gameDataObject.DestroyerSunkbyPlayer === false
+  ) {
+    displayPlayerInfo("You sank the computers destroyer");
     gameDataObject.DestroyerSunkbyPlayer = true;
   }
 
-  if (gameDataObject.SubmarineCellsShotbyPlayer === 3) {
-    displayInfo("You sank the computers submarine");
+  if (
+    gameDataObject.SubmarineCellsShotbyPlayer === 3 &&
+    gameDataObject.SubmarineSunkbyPlayer === false
+  ) {
+    displayPlayerInfo("You sank the computers submarine");
     gameDataObject.SubmarineSunkbyPlayer = true;
   }
-  if (gameDataObject.CruiserCellsShotbyPlayer === 3) {
-    displayInfo("You sank the computers cruiser");
+  if (
+    gameDataObject.CruiserCellsShotbyPlayer === 3 &&
+    gameDataObject.CruiserSunkbyPlayer === false
+  ) {
+    displayPlayerInfo("You sank the computers cruiser");
     gameDataObject.CruiserSunkbyPlayer = true;
   }
 
-  if (gameDataObject.BattleshipCellsShotbyPlayer === 4) {
-    displayInfo("You sank the computers battleship");
+  if (
+    gameDataObject.BattleshipCellsShotbyPlayer === 4 &&
+    gameDataObject.BattleshipSunkbyPlayer === false
+  ) {
+    displayPlayerInfo("You sank the computers battleship");
     gameDataObject.BattleshipSunkbyPlayer = true;
   }
 
-  if (gameDataObject.CarrierCellsShotbyPlayer === 5) {
-    displayInfo("You sank the computers carrier");
+  if (
+    gameDataObject.CarrierCellsShotbyPlayer === 5 &&
+    gameDataObject.CarrierSunkbyPlayer === false
+  ) {
+    displayPlayerInfo("You sank the computers carrier");
     gameDataObject.CarrierSunkbyPlayer = true;
   }
 
-  if (gameDataObject.DestroyerCellsShotbyComputer === 2) {
-    displayInfo("Your destroyer has been sunk");
+  if (
+    gameDataObject.DestroyerCellsShotbyComputer === 2 &&
+    gameDataObject.DestroyerSunkbyComputer === false
+  ) {
+    displayPlayerInfo("Your destroyer has been sunk");
     gameDataObject.DestroyerSunkbyComputer = true;
   }
-  if (gameDataObject.SubmarineCellsShotbyComputer === 3) {
-    displayInfo("Your submarine has been sunk");
+  if (
+    gameDataObject.SubmarineCellsShotbyComputer === 3 &&
+    gameDataObject.SubmarineSunkbyComputer === false
+  ) {
+    displayPlayerInfo("Your submarine has been sunk");
     gameDataObject.SubmarineSunkbyComputer = true;
   }
-  if (gameDataObject.CruiserCellsShotbyComputer === 3) {
-    displayInfo("Your cruiser has been sunk");
+  if (
+    gameDataObject.CruiserCellsShotbyComputer === 3 &&
+    gameDataObject.CruiserSunkbyComputer === false
+  ) {
+    displayPlayerInfo("Your cruiser has been sunk");
     gameDataObject.CruiserSunkbyComputer = true;
   }
-  if (gameDataObject.BattleshipCellsShotbyComputer === 4) {
-    displayInfo("Your battleship has been sunk");
+  if (
+    gameDataObject.BattleshipCellsShotbyComputer === 4 &&
+    gameDataObject.BattleshipSunkbyComputer === false
+  ) {
+    displayPlayerInfo("Your battleship has been sunk");
     gameDataObject.BattleshipSunkbyComputer = true;
   }
-  if (gameDataObject.CarrierCellsShotbyComputer === 5) {
-    displayInfo("Your carrier has been sunk");
+  if (
+    gameDataObject.CarrierCellsShotbyComputer === 5 &&
+    gameDataObject.CarrierSunkbyComputer === false
+  ) {
+    displayPlayerInfo("Your carrier has been sunk");
     gameDataObject.CarrierSunkbyComputer = true;
   }
 

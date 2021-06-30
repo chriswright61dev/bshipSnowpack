@@ -41,7 +41,7 @@ export function verticalSetup(
       // for (let index = 0; index < draggedShipLength; index++) {
       playerCellsArray[
         droppedOnCellId + (index - selectedShipIndex) * gridWidth
-      ].classList.add("cell_taken", shipName);
+      ].classList.add("cell_taken", shipName, "playerShip");
     }
     chooseShipsGrid.removeChild(draggedShipContainer);
   }
