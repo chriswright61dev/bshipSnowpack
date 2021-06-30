@@ -1,5 +1,6 @@
 import { gameDataObject, playerCellsArray } from "../data/data";
 import { randMAbsolute } from "../utilities/utilities";
+import { displayTurn, displayInfo } from "./displayThings";
 export function computerTurn() {
   console.log("computer turn");
 
@@ -8,31 +9,37 @@ export function computerTurn() {
   let randomCell = randMAbsolute(playerCellsArray.length);
 
   if (playerCellsArray[randomCell].classList.contains("tested")) {
-    console.log("already tried this cell");
+    // console.log("already tried this cell");
     computerTurn();
   } else {
-    console.log("never tried this cell before", randomCell);
+    // console.log("never tried this cell before", randomCell);
     playerCellsArray[randomCell].classList.add("tested");
 
     if (playerCellsArray[randomCell].classList.contains("destroyer")) {
-      gameDataObject.computerDestroyerCount++;
+      gameDataObject.DestroyerCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
+      displayInfo("Computer Hit Your Destroyer");
     } else if (playerCellsArray[randomCell].classList.contains("submarine")) {
-      gameDataObject.computerSubmarineCount++;
+      gameDataObject.SubmarineCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
+      displayInfo("Computer Hit Your Submarine");
     } else if (playerCellsArray[randomCell].classList.contains("cruiser")) {
-      gameDataObject.computerCruiserCount++;
+      gameDataObject.CruiserCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
+      displayInfo("Computer Hit Your Cruiser");
     } else if (playerCellsArray[randomCell].classList.contains("battleship")) {
-      gameDataObject.computerBattleshipCount++;
+      gameDataObject.BattleshipCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
+      displayInfo("Computer Hit Your Battleship");
     } else if (playerCellsArray[randomCell].classList.contains("carrier")) {
-      gameDataObject.computerCarrierCount++;
+      gameDataObject.CarrierCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
+      displayInfo("Computer Hit Your Carrier");
     } else {
       playerCellsArray[randomCell].classList.add("miss");
+      displayInfo("Computer Missed");
     }
   }
-  turnDisplay.innerHTML = "Your Turn";
+  displayTurn("Your Turn");
   gameDataObject.currentPlayer = "player";
 }

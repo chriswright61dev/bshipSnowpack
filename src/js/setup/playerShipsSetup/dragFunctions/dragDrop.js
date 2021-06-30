@@ -3,6 +3,7 @@ import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 import { horizontalSetup } from "../horizontalSetup";
 import { verticalSetup } from "../verticalSetup";
 import { playGame } from "../../../play/playGame";
+import { displayInfo, hideRotateButton } from "../../../play/displayThings";
 export function dragDrop() {
   console.log("in drag drop");
   console.log("playerShipsDisplay", playerShipsDisplay);
@@ -65,6 +66,9 @@ export function dragDrop() {
   //   this is full of formatting text nodes so remove them
   const remain = justChildNodesWithIdArray(chooseBoard);
   if (justChildNodesWithIdArray(chooseBoard).length === 0) {
+    // hide the rotate button
+    hideRotateButton();
+    displayInfo("Play! Choose a Target");
     playGame();
   }
 }

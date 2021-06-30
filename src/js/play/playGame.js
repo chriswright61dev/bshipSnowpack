@@ -1,4 +1,4 @@
-import { gameDataObject, computerCellsArray } from "../data/data";
+import { gameDataObject } from "../data/data";
 
 import { playerTurn } from "./playerTurn";
 import { computerTurn } from "./computerTurn";
@@ -14,6 +14,7 @@ export function playGame() {
   if (gameDataObject.currentPlayer === "player") {
     playerTurn();
   }
+
   if (gameDataObject.currentPlayer === "computer") {
     computerTurn();
   }
