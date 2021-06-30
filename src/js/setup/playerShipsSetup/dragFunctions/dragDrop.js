@@ -1,10 +1,8 @@
 import { playerShipsDisplay, draggedItems } from "../playerShipsSetup";
-
-// import functions
+import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 import { horizontalSetup } from "../horizontalSetup";
 import { verticalSetup } from "../verticalSetup";
-import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
-
+import { playGame } from "../../../play/playGame";
 export function dragDrop() {
   console.log("in drag drop");
   console.log("playerShipsDisplay", playerShipsDisplay);
@@ -60,5 +58,13 @@ export function dragDrop() {
       selectedShipIndex,
       droppedOnCellId
     );
+  }
+
+  // is there anything left to drop
+  const chooseBoard = document.querySelector(".grid_choose_ships");
+  //   this is full of formatting text nodes so remove them
+  const remain = justChildNodesWithIdArray(chooseBoard);
+  if (justChildNodesWithIdArray(chooseBoard).length === 0) {
+    playGame();
   }
 }

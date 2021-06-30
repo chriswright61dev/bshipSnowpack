@@ -14,14 +14,10 @@ export let draggedItems = {
   selectedShipNameWithIndex: "",
 };
 
-// export let playerShipsDisplay = "horizontal";
-// TypeError: "playerShipsDisplay" is read-only ???
 export const playerShipsDisplay = { direction: "horizontal" };
 
 export function playerShipsSetup() {
-  //   console.log("in player setup");
   const rotateButton = document.querySelector("#rotate_button");
-  //   console.log(rotateButton);
   rotateButton.addEventListener("click", rotatePlayerShips);
 
   //  target the divs on the choose ships board
@@ -31,14 +27,11 @@ export function playerShipsSetup() {
   ships.forEach((ship) => ship.addEventListener("dragstart", dragStart));
   ships.forEach((ship) =>
     ship.addEventListener("mousedown", (e) => {
-      //   console.log("e", e);
-      //   console.log(" e.target.id", e.target.id);
       draggedItems.selectedShipNameWithIndex = e.target.id;
     })
   );
 
   //   playerCellsArray references the html playerGrid
-
   playerCellsArray.forEach((cell) =>
     cell.addEventListener("dragstart", dragStart)
   );

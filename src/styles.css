@@ -181,3 +181,25 @@ button {
 .carrier {
   background-color: rgb(255, 187, 85);
 }
+.cell_taken {
+  /* background-color: rgb(139, 15, 11); */
+  border: rgb(13, 22, 146) solid 2px;
+}
+
+.hide {
+  /* display: none; */
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+  /* background-color: white; */
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
+  background-color: rgb(67, 64, 199);
+}
