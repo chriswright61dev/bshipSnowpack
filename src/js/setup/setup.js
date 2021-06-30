@@ -1,5 +1,6 @@
 const playerGrid = document.querySelector(".grid_player");
 const computerGrid = document.querySelector(".grid_computer");
+import { makeShip } from "./computerShipsSetup/makeShip";
 import {
   gridWidth,
   gridHeight,
