@@ -19,8 +19,39 @@ export let draggedItems = {
 export const playerShipsDisplay = { direction: "horizontal" };
 
 export function playerShipsSetup() {
-  console.log("in player setup");
+  //   console.log("in player setup");
   const rotateButton = document.querySelector("#rotate_button");
-  console.log(rotateButton);
+  //   console.log(rotateButton);
   rotateButton.addEventListener("click", rotatePlayerShips);
+
+  //  target the divs on the choose ships board
+  const ships = document.querySelectorAll(".ship");
+  // an array of the ships container divs
+
+  ships.forEach((ship) => ship.addEventListener("dragstart", dragStart));
+  ships.forEach((ship) =>
+    ship.addEventListener("mousedown", (e) => {
+      //   console.log("e", e);
+      //   console.log(" e.target.id", e.target.id);
+      draggedItems.selectedShipNameWithIndex = e.target.id;
+    })
+  );
+
+  //   playerCellsArray references the html playerGrid
+
+  playerCellsArray.forEach((cell) =>
+    cell.addEventListener("dragstart", dragStart)
+  );
+  playerCellsArray.forEach((cell) =>
+    cell.addEventListener("dragover", dragOver)
+  );
+  playerCellsArray.forEach((cell) =>
+    cell.addEventListener("dragenter", dragEnter)
+  );
+  playerCellsArray.forEach((cell) =>
+    cell.addEventListener("dragleave", dragLeave)
+  );
+  playerCellsArray.forEach((cell) => cell.addEventListener("drop", dragDrop));
+
+  playerCellsArray.forEach((cell) => cell.addEventListener("dragend", dragEnd));
 }

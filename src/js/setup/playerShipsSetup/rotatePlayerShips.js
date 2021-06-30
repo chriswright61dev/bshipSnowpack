@@ -6,13 +6,8 @@ export function rotatePlayerShips() {
   const cruiserContainer = document.querySelector(".cruiser_container");
   const battleshipContainer = document.querySelector(".battleship_container");
   const carrierContainer = document.querySelector(".carrier_container");
-
-  console.log("rotating the player ships ");
-
   //   if (playerShipsDisplay === "horizontal")
   if (playerShipsDisplay.direction === "horizontal") {
-    console.log("horizontal");
-
     // add vertical class to toggle whether is horizontal
     // vertical class is after container class in the css stack
 
@@ -37,5 +32,4 @@ export function rotatePlayerShips() {
     playerShipsDisplay.direction = "horizontal";
     return;
   }
-  console.log("late return");
 }
