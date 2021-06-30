@@ -5,6 +5,7 @@ import {
   gridHeight,
   playerCellsArray,
   computerCellsArray,
+  shipDataArray,
 } from "../data/data";
 import { createBoard } from "./boardSetup/createBoard";
 export function setup() {
@@ -12,4 +13,9 @@ export function setup() {
   //   gridName, cellsArray, gridWidth, gridHeight, idname;
   createBoard(playerGrid, playerCellsArray, gridWidth, gridHeight, "p");
   createBoard(computerGrid, computerCellsArray, gridWidth, gridHeight, "c");
+
+  //  make all the computers ships
+  for (let index = 0; index < shipDataArray.length; index++) {
+    makeShip(shipDataArray[index], computerCellsArray, gridWidth, gridHeight);
+  }
 }
