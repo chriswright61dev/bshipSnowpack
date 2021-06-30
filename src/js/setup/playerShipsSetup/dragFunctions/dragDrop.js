@@ -1,4 +1,4 @@
-import { gameDataObject } from "../../../data/data";
+import { playerShipsDisplay } from "../playerShipsSetup";
 import { draggedItems } from "../playerShipsSetup";
 
 // import functions
@@ -39,4 +39,27 @@ export function dragDrop() {
   let droppedOnCellId = parseInt(this.id.substr(1));
   // I added an id with a letter and number to each cell -
   // so strip the letter and get the number to reference the cells array
+
+  // horizontal ship
+  if (playerShipsDisplay === "horizontal") {
+    horizontalSetup(
+      shipName,
+      shipLength,
+      draggedShipContainer,
+      lastShipIndex,
+      selectedShipIndex,
+      droppedOnCellId
+    );
+  }
+  // vertical ship
+  if (playerShipsDisplay === "vertical") {
+    verticalSetup(
+      shipName,
+      shipLength,
+      draggedShipContainer,
+      lastShipIndex,
+      selectedShipIndex,
+      droppedOnCellId
+    );
+  }
 }
