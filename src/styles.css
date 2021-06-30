@@ -60,6 +60,13 @@ button {
   width: 480px;
 }
 
+.grid div {
+  /* color: rgb(219, 230, 202); */
+  border: 1px slategray solid;
+  height: 40px;
+  width: 40px;
+}
+
 .destroyer_container {
   background-color: rgb(147, 255, 85);
   display: flex;
