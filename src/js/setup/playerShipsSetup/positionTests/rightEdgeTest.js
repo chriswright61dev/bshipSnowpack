@@ -4,7 +4,7 @@ export function rightEdgeTest(shipData, startPosition, shipDirection) {
 
   let boundary = shipData.some((index) =>
     computerCellsArray[startPosition + index].classList.contains(
-      "right-boundary"
+      "right_boundary"
     )
   );
 
@@ -14,7 +14,7 @@ export function rightEdgeTest(shipData, startPosition, shipDirection) {
   boundaryLastCell =
     shipDirection === "horizontal" &&
     computerCellsArray[lastHorizontalShipCell].classList.contains(
-      "right-boundary"
+      "right_boundary"
     )
       ? true
       : false;

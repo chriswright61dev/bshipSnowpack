@@ -1,10 +1,9 @@
-import { playerShipsDisplay } from "../playerShipsSetup";
-import { draggedItems } from "../playerShipsSetup";
+import { playerShipsDisplay, draggedItems } from "../playerShipsSetup";
 
 // import functions
-import { horizontalSetup } from "../horizontalSetup.js";
-import { verticalSetup } from "../verticalSetup.js";
-import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray.js";
+import { horizontalSetup } from "../horizontalSetup";
+import { verticalSetup } from "../verticalSetup";
+import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 
 export function dragDrop() {
   console.log("in drag drop");

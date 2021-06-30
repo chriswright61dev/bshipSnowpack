@@ -1,7 +1,7 @@
-import { getShipData } from "./getShipData.js";
+import { getShipData } from "./getShipData";
 import { playerCellsArray, gridWidth } from "../../data/data";
-import { verticalBoundaryCheck } from "./positionTests/verticalBoundaryCheck.js";
-import { overlapCheckVertical } from "./positionTests/overlapCheckVertical.js";
+import { verticalBoundaryCheck } from "./positionTests/verticalBoundaryCheck";
+import { overlapCheckVertical } from "./positionTests/overlapCheckVertical";
 // import { gameSetup } from "../gameSetup.js";
 export function verticalSetup(
   shipName,

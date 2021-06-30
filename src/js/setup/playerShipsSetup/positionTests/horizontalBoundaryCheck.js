@@ -1,4 +1,4 @@
-import { playerCellsArray } from "../../../index.js";
+import { playerCellsArray } from "../../../data/data";
 
 // check for good position - true is ok
 export function horizontalBoundaryCheck(

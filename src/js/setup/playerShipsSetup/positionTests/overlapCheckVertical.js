@@ -1,5 +1,5 @@
-import { gridWidth, gridHeight, shipDataArray } from "../../gameData.js";
-import { playerCellsArray } from "../../../index.js";
+import { gridWidth, gridHeight, playerCellsArray } from "../../../data/data.js";
+
 export function overlapCheckVertical(shipLastId, shiplength, shipDataVertical) {
   let startcell = shipLastId - (shiplength - 1) * gridWidth;
 

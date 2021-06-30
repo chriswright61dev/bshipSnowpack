@@ -1,9 +1,14 @@
-import { gridWidth, gridHeight, shipDataArray } from "../../gameData.js";
-import { playerCellsArray } from "../../../index.js";
+import {
+  playerCellsArray,
+  gridWidth,
+  gridHeight,
+  // shipDataArray,
+} from "../../../data/data";
+
 export function verticalBoundaryCheck(
   shipLastId,
-  shiplength,
-  shipDataVertical
+  shiplength
+  // shipDataVertical
 ) {
   let startcell = shipLastId - (shiplength - 1) * gridWidth;
   // bottom error - if last cell > 144 or max cell number

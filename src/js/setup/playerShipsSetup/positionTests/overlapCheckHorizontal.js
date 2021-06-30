@@ -1,4 +1,4 @@
-import { playerCellsArray } from "../../../index.js";
+import { playerCellsArray } from "../../../data/data";
 
 // check that no cell thats dropped is already taken
 export function overlapCheckHorizontal(
