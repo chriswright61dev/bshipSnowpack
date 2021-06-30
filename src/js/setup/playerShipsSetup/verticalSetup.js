@@ -1,1 +1,8 @@
-export function verticalSetup() {}
+export function verticalSetup(
+  shipName,
+  shipLength,
+  draggedShipContainer,
+  lastShipIndex,
+  selectedShipIndex,
+  droppedOnCellId
+) {}
