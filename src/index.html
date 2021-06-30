@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Empty project</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div id="app"></div>
-        <script type="module" src="index.js"></script>
-    </body>
+  <head>
+    <title>Battleships</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="grid_container">
+      <div class="grid grid_player"></div>
+      <div class="grid grid_computer"></div>
+    </div>
+    <div class="grid_container">
+      <div class="grid_choose_ships">
+        <!-- the player ships are arranged in a grid 
+            ready to be dragged onto the board - track them by id of cell-->
+        <div class="ship destroyer_container" draggable="true">
+          <div id="destroyer_0"></div>
+          <div id="destroyer_1"></div>
+        </div>
+        <div class="ship submarine_container" draggable="true">
+          <div id="submarine_0"></div>
+          <div id="submarine_1"></div>
+          <div id="submarine_2"></div>
+        </div>
+        <div class="ship cruiser_container" draggable="true">
+          <div id="cruiser_0"></div>
+          <div id="cruiser_1"></div>
+          <div id="cruiser_2"></div>
+        </div>
+        <div class="ship battleship_container" draggable="true">
+          <div id="battleship_0"></div>
+          <div id="battleship_1"></div>
+          <div id="battleship_2"></div>
+          <div id="battleship_3"></div>
+        </div>
+        <div class="ship carrier_container" draggable="true">
+          <div id="carrier_0"></div>
+          <div id="carrier_1"></div>
+          <div id="carrier_2"></div>
+          <div id="carrier_3"></div>
+          <div id="carrier_4"></div>
+        </div>
+      </div>
+      <div class="info_controls">
+        <h3 id="info_display">Setup</h3>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
