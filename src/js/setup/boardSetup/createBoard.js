@@ -5,7 +5,6 @@ export function createBoard(
   gridHeight,
   idname
 ) {
-  console.log("set up board");
   // cellsArray should be an empty array so empty it to make sure
   cellsArray.length = 0;
 
@@ -16,7 +15,7 @@ export function createBoard(
     // show number in cell for testing
     cell.id = idname + i;
     cell.innerHTML = i;
-    cell.classList.add("cell_taken"); // just for testing
+    // cell.classList.add("cell_taken"); // just for testing
     // add classes to cells at the boundaries for crossing tests
 
     // Boundaries

@@ -43,7 +43,7 @@ button {
 }
 
 .grid_player {
-  background-color: rgb(188, 188, 243);
+  background-color: rgb(233, 233, 248);
   display: flex;
   flex-wrap: wrap;
   height: 480px;
@@ -52,7 +52,7 @@ button {
 }
 
 .grid_computer {
-  background-color: rgb(188, 243, 197);
+  background-color: rgb(220, 245, 224);
   display: flex;
   flex-wrap: wrap;
   height: 480px;
@@ -65,6 +65,16 @@ button {
   border: 1px slategray solid;
   height: 40px;
   width: 40px;
+}
+
+.ship {
+  border: 3px solid red;
+}
+
+.ship div {
+  height: 40px;
+  width: 40px;
+  /* background-color: rgb(107, 136, 63); */
 }
 
 .destroyer_container {
@@ -150,4 +160,24 @@ button {
   height: 200px;
   margin: 10px;
   width: 40px;
+}
+
+.destroyer {
+  background-color: rgb(147, 255, 85);
+}
+
+.submarine {
+  background-color: rgb(255, 85, 190);
+}
+
+.cruiser {
+  background-color: rgb(193, 85, 255);
+}
+
+.battleship {
+  background-color: rgb(13, 22, 146);
+}
+
+.carrier {
+  background-color: rgb(255, 187, 85);
 }
