@@ -1,4 +1,61 @@
-h1 {
-  color: white;
-  background-color: black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.grid_container {
+  display: flex;
+}
+
+.grid_choose_ships {
+  background-color: rgb(243, 188, 225);
+  height: 480px;
+  margin: 20px;
+  /* width: 400px;
+  height: 400px; */
+  width: 480px;
+}
+
+.info_controls {
+  background-color: rgb(249, 255, 215);
+  height: 480px;
+  margin: 20px;
+  width: 480px;
+}
+
+.grid_player {
+  background-color: rgb(188, 188, 243);
+  display: flex;
+  flex-wrap: wrap;
+  height: 480px;
+  margin: 20px;
+  width: 480px;
+}
+
+.grid_computer {
+  background-color: rgb(188, 243, 197);
+  display: flex;
+  flex-wrap: wrap;
+  height: 480px;
+  margin: 20px;
+  width: 480px;
 }
