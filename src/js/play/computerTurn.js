@@ -1,10 +1,8 @@
 import { gameDataObject, playerCellsArray } from "../data/data";
 import { randMAbsolute } from "../utilities/utilities";
-import { displayTurn, displayInfo } from "./displayThings";
+import { displayTurn, displayComputerInfo } from "../utilities/displayThings";
 export function computerTurn() {
   console.log("computer turn");
-
-  const turnDisplay = document.querySelector("#turn_display");
 
   let randomCell = randMAbsolute(playerCellsArray.length);
 
@@ -18,26 +16,26 @@ export function computerTurn() {
     if (playerCellsArray[randomCell].classList.contains("destroyer")) {
       gameDataObject.DestroyerCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
-      displayInfo("Computer Hit Your Destroyer");
+      displayComputerInfo("Computer Hit Your Destroyer");
     } else if (playerCellsArray[randomCell].classList.contains("submarine")) {
       gameDataObject.SubmarineCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
-      displayInfo("Computer Hit Your Submarine");
+      displayComputerInfo("Computer Hit Your Submarine");
     } else if (playerCellsArray[randomCell].classList.contains("cruiser")) {
       gameDataObject.CruiserCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
-      displayInfo("Computer Hit Your Cruiser");
+      displayComputerInfo("Computer Hit Your Cruiser");
     } else if (playerCellsArray[randomCell].classList.contains("battleship")) {
       gameDataObject.BattleshipCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
-      displayInfo("Computer Hit Your Battleship");
+      displayComputerInfo("Computer Hit Your Battleship");
     } else if (playerCellsArray[randomCell].classList.contains("carrier")) {
       gameDataObject.CarrierCellsShotbyComputer++;
       playerCellsArray[randomCell].classList.add("hit");
-      displayInfo("Computer Hit Your Carrier");
+      displayComputerInfo("Computer Hit Your Carrier");
     } else {
       playerCellsArray[randomCell].classList.add("miss");
-      displayInfo("Computer Missed");
+      displayComputerInfo("Computer Missed");
     }
   }
   displayTurn("Your Turn");

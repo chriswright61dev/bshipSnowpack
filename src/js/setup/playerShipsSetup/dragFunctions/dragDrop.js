@@ -3,7 +3,11 @@ import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 import { horizontalSetup } from "../horizontalSetup";
 import { verticalSetup } from "../verticalSetup";
 import { playGame } from "../../../play/playGame";
-import { displayInfo, hideRotateButton } from "../../../play/displayThings";
+import { chooseShipsGrid } from "../../../data/querySelectors";
+import {
+  displayInfo,
+  hideRotateButton,
+} from "../../../utilities/displayThings";
 export function dragDrop() {
   console.log("in drag drop");
   console.log("playerShipsDisplay", playerShipsDisplay);
@@ -61,11 +65,10 @@ export function dragDrop() {
     );
   }
 
-  // is there anything left to drop
-  const chooseBoard = document.querySelector(".grid_choose_ships");
+  // is there anything left to drop on the choose ships grid
   //   this is full of formatting text nodes so remove them
-  const remain = justChildNodesWithIdArray(chooseBoard);
-  if (justChildNodesWithIdArray(chooseBoard).length === 0) {
+  const remain = justChildNodesWithIdArray(chooseShipsGrid);
+  if (justChildNodesWithIdArray(chooseShipsGrid).length === 0) {
     // hide the rotate button
     hideRotateButton();
     displayInfo("Play! Choose a Target");

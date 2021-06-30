@@ -6,7 +6,7 @@ import { dragLeave } from "./dragFunctions/dragLeave.js";
 import { dragOver } from "./dragFunctions/dragOver.js";
 import { dragStart } from "./dragFunctions/dragStart.js";
 import { rotatePlayerShips } from "./rotatePlayerShips";
-
+import { rotateButton } from "../../data/querySelectors";
 //   set up some state for other functions to use
 export let draggedItems = {
   draggedShip: null,
@@ -17,7 +17,7 @@ export let draggedItems = {
 export const playerShipsDisplay = { direction: "horizontal" };
 
 export function playerShipsSetup() {
-  const rotateButton = document.querySelector("#rotate_button");
+  // const rotateButton = document.querySelector("#rotate_button");
   rotateButton.addEventListener("click", rotatePlayerShips);
 
   //  target the divs on the choose ships board

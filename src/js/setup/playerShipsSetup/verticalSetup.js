@@ -1,5 +1,7 @@
 import { getShipData } from "./getShipData";
 import { playerCellsArray, gridWidth } from "../../data/data";
+import { chooseShipsGrid } from "../../data/querySelectors";
+
 import { verticalBoundaryCheck } from "./positionTests/verticalBoundaryCheck";
 import { overlapCheckVertical } from "./positionTests/overlapCheckVertical";
 // import { gameSetup } from "../gameSetup.js";
@@ -12,7 +14,7 @@ export function verticalSetup(
   droppedOnCellId
 ) {
   console.log("vertical setup ");
-  const chooseShipsGrid = document.querySelector(".grid_choose_ships");
+
   let shipDataVertical = getShipData(shipName, "vertical");
 
   let shipLastIdV =

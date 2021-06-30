@@ -1,12 +1,12 @@
 import { playerShipsDisplay } from "./playerShipsSetup";
-
+import {
+  destroyerContainer,
+  submarineContainer,
+  cruiserContainer,
+  battleshipContainer,
+  carrierContainer,
+} from "../../data/querySelectors";
 export function rotatePlayerShips() {
-  const destroyerContainer = document.querySelector(".destroyer_container");
-  const submarineContainer = document.querySelector(".submarine_container");
-  const cruiserContainer = document.querySelector(".cruiser_container");
-  const battleshipContainer = document.querySelector(".battleship_container");
-  const carrierContainer = document.querySelector(".carrier_container");
-
   if (playerShipsDisplay.direction === "horizontal") {
     // add the vertical classes - after the horizontal in the css stack
     if (destroyerContainer) {

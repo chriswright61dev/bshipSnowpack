@@ -8,6 +8,7 @@ export function playGame() {
   if (gameDataObject.isGameOver === true) {
     return; // game is over
   }
+
   // check for win and sinking
   checkForWin();
 

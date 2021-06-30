@@ -1,5 +1,4 @@
-const playerGrid = document.querySelector(".grid_player");
-const computerGrid = document.querySelector(".grid_computer");
+import { playerGrid, computerGrid } from "../data/querySelectors";
 
 import { makeShip } from "./computerShipsSetup/makeShip";
 import { playerShipsSetup } from "./playerShipsSetup/playerShipsSetup";

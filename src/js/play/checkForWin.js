@@ -1,7 +1,8 @@
 import { gameDataObject } from "../data/data";
 import { gameOver } from "./gameOver";
-import { displayTurn, displayInfo } from "./displayThings";
-export function checkForWin(infoDisplay) {
+import { displayTurn, displayInfo } from "../utilities/displayThings";
+
+export function checkForWin() {
   console.log("checking for wins");
   console.log("gameDataObject", gameDataObject);
   if (gameDataObject.DestroyerCellsShotbyPlayer === 2) {

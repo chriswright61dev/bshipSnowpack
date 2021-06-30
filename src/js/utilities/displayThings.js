@@ -1,10 +1,21 @@
-export const rotateButton = document.querySelector("#rotate_button");
-
-const infoDisplay = document.querySelector("#info_display");
-const turnDisplay = document.querySelector("#turn_display");
+import {
+  infoDisplay,
+  turnDisplay,
+  rotateButton,
+  computerInfoDisplay,
+  playerInfoDisplay,
+} from "../data/querySelectors";
 
 export function displayInfo(message) {
   infoDisplay.innerHTML = message;
+}
+
+export function displayComputerInfo(message) {
+  computerInfoDisplay.innerHTML = message;
+}
+
+export function displayPlayerInfo(message) {
+  playerInfoDisplay.innerHTML = message;
 }
 
 export function displayTurn(message) {

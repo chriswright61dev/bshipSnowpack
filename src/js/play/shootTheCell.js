@@ -1,6 +1,11 @@
 import { gameDataObject } from "../data/data";
 import { playGame } from "./playGame";
-import { displayTurn, displayInfo } from "./displayThings";
+import {
+  // displayTurn,
+  // displayInfo,
+  displayPlayerInfo,
+  // displayComputerInfo,
+} from "../utilities/displayThings";
 export function shootTheCell(cell) {
   // const infoDisplay = document.querySelector("#info_display");
   console.log("in the player shooting function");
@@ -13,26 +18,26 @@ export function shootTheCell(cell) {
     if (cell.classList.contains("destroyer")) {
       gameDataObject.DestroyerCellsShotbyPlayer++;
       console.log("destroyer hit");
-      displayInfo("A Hit");
+      displayPlayerInfo("A Hit");
     }
     if (cell.classList.contains("submarine")) {
       console.log("submarine hit");
-      displayInfo("A Hit");
+      displayPlayerInfo("A Hit");
       gameDataObject.SubmarineCellsShotbyPlayer++;
     }
     if (cell.classList.contains("cruiser")) {
       console.log("cruiser hit");
-      displayInfo("A Hit");
+      displayPlayerInfo("A Hit");
       gameDataObject.CruiserCellsShotbyPlayer++;
     }
     if (cell.classList.contains("battleship")) {
       console.log("battleship hit");
-      displayInfo("A Hit");
+      displayPlayerInfo("A Hit");
       gameDataObject.BattleshipCellsShotbyPlayer++;
     }
     if (cell.classList.contains("carrier")) {
       console.log("carrier hit");
-      displayInfo("A Hit");
+      displayPlayerInfo("A Hit");
       gameDataObject.CarrierCellsShotbyPlayer++;
     }
   }
@@ -41,7 +46,7 @@ export function shootTheCell(cell) {
     cell.classList.add("hit");
   } else {
     cell.classList.add("miss");
-    infoDisplay.innerText = "A Miss";
+    displayPlayerInfo("A Miss");
   }
 
   gameDataObject.currentPlayer = "computer";

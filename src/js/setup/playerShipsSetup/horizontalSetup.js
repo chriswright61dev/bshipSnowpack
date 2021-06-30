@@ -2,6 +2,7 @@ import { getShipData } from "./getShipData.js";
 import { playerCellsArray } from "../../data/data";
 import { horizontalBoundaryCheck } from "./positionTests/horizontalBoundaryCheck.js";
 import { overlapCheckHorizontal } from "./positionTests/overlapCheckHorizontal.js";
+import { chooseShipsGrid } from "../../data/querySelectors";
 // import { gameSetup } from "../gameSetup.js";
 
 export function horizontalSetup(
@@ -13,7 +14,7 @@ export function horizontalSetup(
   droppedOnCellId
 ) {
   console.log("in horizontal setup");
-  const chooseShipsGrid = document.querySelector(".grid_choose_ships");
+  // const chooseShipsGrid = document.querySelector(".grid_choose_ships");
   let shipDataHorizontal = getShipData(shipName, "horizontal");
   let shipLastIdH = lastShipIndex + droppedOnCellId - selectedShipIndex;
   // the cell number of the player grid
