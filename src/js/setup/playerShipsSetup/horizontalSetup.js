@@ -12,7 +12,7 @@ export function horizontalSetup(
   selectedShipIndex,
   droppedOnCellId
 ) {
-  // console.log("in horizontal setup");
+  console.log("in horizontal setup");
   const chooseShipsGrid = document.querySelector(".grid_choose_ships");
   let shipDataHorizontal = getShipData(shipName, "horizontal");
   let shipLastIdH = lastShipIndex + droppedOnCellId - selectedShipIndex;

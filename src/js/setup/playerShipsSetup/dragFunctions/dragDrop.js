@@ -7,7 +7,7 @@ import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 
 export function dragDrop() {
   console.log("in drag drop");
-
+  console.log("playerShipsDisplay", playerShipsDisplay);
   // the main function - when dropped
   let draggedShipContainer = draggedItems.draggedShip;
   // this is the whole div ship container
@@ -40,7 +40,7 @@ export function dragDrop() {
   // so strip the letter and get the number to reference the cells array
 
   // horizontal ship
-  if (playerShipsDisplay === "horizontal") {
+  if (playerShipsDisplay.direction === "horizontal") {
     horizontalSetup(
       shipName,
       shipLength,
@@ -51,7 +51,7 @@ export function dragDrop() {
     );
   }
   // vertical ship
-  if (playerShipsDisplay === "vertical") {
+  if (playerShipsDisplay.direction === "vertical") {
     verticalSetup(
       shipName,
       shipLength,
