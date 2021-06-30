@@ -3,7 +3,7 @@ import { testShipPosition } from "./testShipPosition";
 export function makeShip(shipData, computerCellsArray, gridWidth, gridHeight) {
   const shipDirection = randomDirection();
 
-  console.log("shipDirection", shipDirection);
+  // console.log("shipDirection", shipDirection);
   let currentShipData;
   let directionMultiplier;
   if (shipDirection === "horizontal") {
@@ -16,7 +16,7 @@ export function makeShip(shipData, computerCellsArray, gridWidth, gridHeight) {
   let shipStartPosition = randMAbsolute(
     computerCellsArray.length - shipData.horizontal.length * directionMultiplier
   );
-  console.log("shipDirection", shipDirection);
+  // console.log("shipDirection", shipDirection);
 
   // test that the ships position is ok
   const isValidShipPosition = testShipPosition(
@@ -45,7 +45,7 @@ export function makeShip(shipData, computerCellsArray, gridWidth, gridHeight) {
       );
     }
   } else {
-    console.log("ship position failed - try again  ; ");
+    // console.log("ship position failed - try again  ; ");
     makeShip(shipData, computerCellsArray, gridWidth, gridHeight);
   }
 }

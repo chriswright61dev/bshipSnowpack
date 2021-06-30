@@ -2,7 +2,7 @@ const playerGrid = document.querySelector(".grid_player");
 const computerGrid = document.querySelector(".grid_computer");
 
 import { makeShip } from "./computerShipsSetup/makeShip";
-// import { playerShipsSetup } from "./playerShipsSetup/playerShipsSetup";
+import { playerShipsSetup } from "./playerShipsSetup/playerShipsSetup";
 import {
   gridWidth,
   gridHeight,
@@ -11,6 +11,7 @@ import {
   shipDataArray,
 } from "../data/data";
 import { createBoard } from "./boardSetup/createBoard";
+
 export function setup() {
   // setup boards to add ship data to
   createBoard(playerGrid, playerCellsArray, gridWidth, gridHeight, "p");
@@ -22,5 +23,5 @@ export function setup() {
   }
 
   //  add all the players ships
-  // playerShipsSetup();
+  playerShipsSetup();
 }
