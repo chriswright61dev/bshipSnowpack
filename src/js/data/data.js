@@ -35,3 +35,33 @@ export const shipDataArray = [
     vertical: [0, gridWidth, gridWidth * 2, gridWidth * 3, gridWidth * 4],
   },
 ];
+
+export const gameDataObject = {
+  isGameOver: false,
+  currentPlayer: "player",
+  infoDisplay: "Place your ships on the grid",
+  turnDisplay: "",
+  DestroyerSunkbyPlayer: false,
+  SubmarineSunkbyPlayer: false,
+  CruiserSunkbyPlayer: false,
+  BattleshipSunkbyPlayer: false,
+  CarrierSunkbyPlayer: false,
+
+  DestroyerCellsShotbyPlayer: 0,
+  SubmarineCellsShotbyPlayer: 0,
+  CruiserCellsShotbyPlayer: 0,
+  BattleshipCellsShotbyPlayer: 0,
+  CarrierCellsShotbyPlayer: 0,
+
+  DestroyerSunkbyComputer: false,
+  SubmarineSunkbyComputer: false,
+  CruiserSunkbyComputer: false,
+  BattleshipSunkbyComputer: false,
+  CarrierSunkbyComputer: false,
+
+  DestroyerCellsShotbyComputer: 0,
+  SubmarineCellsShotbyComputer: 0,
+  CruiserCellsShotbyComputer: 0,
+  BattleshipCellsShotbyComputer: 0,
+  CarrierCellsShotbyComputer: 0,
+};
