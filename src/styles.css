@@ -196,9 +196,6 @@ button {
   /* background-color: rgb(255, 187, 85); */
   /* background-color: rgb(245, 232, 213); */
 }
-.cell_taken {
-  background-color: rgb(243, 245, 161);
-}
 
 .playerShip {
   background-color: rgb(104, 90, 89);
@@ -212,6 +209,10 @@ button {
 .hidden {
   display: none;
   /* background-color: white; */
+}
+
+.cell_taken {
+  background-color: rgb(243, 245, 161);
 }
 
 .hit {

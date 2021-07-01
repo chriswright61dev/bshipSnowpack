@@ -1,3 +1,9 @@
+// querySelectorAll() returns a static (not live) NodeList
+
+// export const ships = document.querySelectorAll(".ship");
+// this one needs to be live
+
+// static querySelectors
 export const rotateButton = document.querySelector("#rotate_button");
 
 export const infoDisplay = document.querySelector("#info_display");

@@ -1,4 +1,5 @@
-import { draggedItems } from "../playerShipsSetup";
+// import { draggedItems } from "../playerShipsSetup";
+import { draggedItems } from "../../../data/data";
 import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 export function dragStart() {
   // console.log("in drag start");

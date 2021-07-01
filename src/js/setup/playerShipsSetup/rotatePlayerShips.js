@@ -1,4 +1,4 @@
-import { playerShipsDisplay } from "./playerShipsSetup";
+import { playerShipsDisplay } from "../../data/data";
 import {
   destroyerContainer,
   submarineContainer,

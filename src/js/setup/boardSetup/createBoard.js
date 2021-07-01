@@ -2,6 +2,7 @@
 import { gridWidth, gridHeight } from "../../data/data";
 
 export function createBoard(gridName, cellsArray, idname) {
+  console.log("create board");
   // cellsArray should be an empty array so empty it to make sure
   cellsArray.length = 0;
 
@@ -11,7 +12,7 @@ export function createBoard(gridName, cellsArray, idname) {
 
     // show number in cell for testing
     cell.id = idname + i;
-    cell.innerHTML = i;
+    // cell.innerHTML = i;
     // cell.classList.add("cell_taken"); // just for testing
     // add classes to cells at the boundaries for crossing tests
 

@@ -1,4 +1,4 @@
-import { playerShipsDisplay, draggedItems } from "../playerShipsSetup";
+import { playerShipsDisplay, draggedItems } from "../../../data/data";
 import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 import { horizontalSetup } from "../horizontalSetup";
 import { verticalSetup } from "../verticalSetup";
@@ -9,12 +9,11 @@ import {
   hideRotateButton,
 } from "../../../utilities/displayThings";
 export function dragDrop() {
-  console.log("in drag drop");
-  console.log("playerShipsDisplay", playerShipsDisplay);
   // the main function - when dropped
   let draggedShipContainer = draggedItems.draggedShip;
   // this is the whole div ship container
-  // let draggedShipLength = draggedItems.draggedShipLength;
+  // let draggedShipLength = draggedItems.draggedShipLength
+  // doesnt work because of extra text nodes from formatting ;
   let draggedShipChildren = justChildNodesWithIdArray(draggedShipContainer);
   // an array of all the divs in the container
 
