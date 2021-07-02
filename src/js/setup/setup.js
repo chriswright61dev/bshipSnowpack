@@ -8,13 +8,15 @@ import {
   shipDataArray,
 } from "../data/data";
 import { createBoard } from "./boardSetup/createBoard";
-
+import { clearBoard } from "./boardSetup/clearBoard";
 export function setup() {
   console.log("setup");
   // add ships to  data to grid_choose_ships
   addPlayerShips();
-
+  clearBoard(playerGrid, playerCellsArray);
+  clearBoard(computerGrid, computerCellsArray);
   // setup boards to add ship data to
+
   createBoard(playerGrid, playerCellsArray, "p");
   createBoard(computerGrid, computerCellsArray, "c");
 
