@@ -1,6 +1,7 @@
-import { chooseShipsGrid } from "../../data/querySelectors";
+// import { chooseShipsGrid } from "../../data/querySelectors";
 
 export function makeContainer(name, cellCount) {
+  const chooseShipsGrid = document.querySelector(".grid_choose_ships");
   const ShipContainer = document.createElement("div");
   const containerClasses = "ship " + name + "_container";
   ShipContainer.className = containerClasses;
@@ -13,8 +14,4 @@ export function makeContainer(name, cellCount) {
     ShipContainer.appendChild(cell[index]);
   }
   chooseShipsGrid.appendChild(ShipContainer);
-}
-
-{
-  /* <div class="ship submarine_container" draggable="true"> */
 }

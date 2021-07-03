@@ -7,12 +7,14 @@ import { dragOver } from "./dragFunctions/dragOver.js";
 import { dragStart } from "./dragFunctions/dragStart.js";
 import { rotatePlayerShips } from "./rotatePlayerShips";
 import { draggedItems } from "../../data/data";
-import { rotateButton } from "../../data/querySelectors";
+// import { rotateButton } from "../../data/querySelectors";
 
 export function playerShipsSetup() {
+  const rotateButton = document.querySelector("#rotate_button");
   rotateButton.addEventListener("click", rotatePlayerShips);
   // querySelectorAll() returns a static (not live) NodeList
-  const ships = document.querySelectorAll(".ship"); // this needs to be live
+  const ships = document.querySelectorAll(".ship");
+  // this needs to be live
   //  target the divs on the choose ships board
   // an array of the ships container divs
 

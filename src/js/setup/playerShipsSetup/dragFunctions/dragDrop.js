@@ -3,13 +3,15 @@ import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 import { horizontalSetup } from "../horizontalSetup";
 import { verticalSetup } from "../verticalSetup";
 import { playGame } from "../../../play/playGame";
-import { chooseShipsGrid } from "../../../data/querySelectors";
+// import { chooseShipsGrid } from "../../../data/querySelectors";
 import {
   displayInfo,
   hideRotateButton,
 } from "../../../utilities/displayThings";
+
 export function dragDrop() {
   // the main function - when dropped
+  const chooseShipsGrid = document.querySelector(".grid_choose_ships");
   let draggedShipContainer = draggedItems.draggedShip;
   // this is the whole div ship container
   // let draggedShipLength = draggedItems.draggedShipLength
