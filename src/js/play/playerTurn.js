@@ -2,8 +2,6 @@ import { shootTheCell } from "./shootTheCell";
 import { gameDataObject, computerCellsArray } from "../data/data";
 import { displayTurn } from "../utilities/displayThings";
 export function playerTurn() {
-  console.log("player turn");
-  debugger;
   computerCellsArray.forEach((cell) => {
     cell.addEventListener("click", function (e) {
       shootTheCell(cell);

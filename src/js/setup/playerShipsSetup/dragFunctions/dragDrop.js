@@ -3,7 +3,7 @@ import { justChildNodesWithIdArray } from "../justChildNodesWithIdArray";
 import { horizontalSetup } from "../horizontalSetup";
 import { verticalSetup } from "../verticalSetup";
 import { playGame } from "../../../play/playGame";
-// import { chooseShipsGrid } from "../../../data/querySelectors";
+
 import {
   displayInfo,
   hideRotateButton,

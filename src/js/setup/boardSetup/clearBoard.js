@@ -1,5 +1,3 @@
-// import { playerGrid, computerGrid } from "../../data/querySelectors";
-
 export function clearBoard(grid, cellsArray) {
   cellsArray = [];
   grid.innerHTML = "";

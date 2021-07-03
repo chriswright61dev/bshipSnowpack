@@ -47,7 +47,7 @@ export function verticalSetup(
   }
 
   // if chooseShipsGrid empty set some state
-  if (chooseShipsGrid.children.length === 0) {
-    // gameSetup();
-  }
+  // if (chooseShipsGrid.children.length === 0) {
+  // gameSetup();
+  // }
 }

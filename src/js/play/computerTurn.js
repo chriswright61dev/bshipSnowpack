@@ -5,10 +5,10 @@ export function computerTurn() {
   let randomCell = randMAbsolute(playerCellsArray.length);
 
   if (playerCellsArray[randomCell].classList.contains("tested")) {
-    // console.log("already tried this cell");
+    // already tried this cell
     computerTurn();
   } else {
-    // console.log("never tried this cell before", randomCell);
+    // never tried this cell before
     playerCellsArray[randomCell].classList.add("tested");
 
     if (playerCellsArray[randomCell].classList.contains("destroyer")) {

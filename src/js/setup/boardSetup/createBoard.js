@@ -1,4 +1,3 @@
-// import many of these
 import { gridWidth, gridHeight } from "../../data/data";
 
 export function createBoard(gridName, cellsArray, idname) {
@@ -13,7 +12,7 @@ export function createBoard(gridName, cellsArray, idname) {
     // show number in cell for testing
     cell.id = idname + i;
     // cell.innerHTML = i;
-    // cell.classList.add("cell_taken"); // just for testing
+
     // add classes to cells at the boundaries for crossing tests
 
     // Boundaries

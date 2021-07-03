@@ -1,5 +1,3 @@
-// import { chooseShipsGrid } from "../../data/querySelectors";
-
 export function makeContainer(name, cellCount) {
   const chooseShipsGrid = document.querySelector(".grid_choose_ships");
   const ShipContainer = document.createElement("div");
