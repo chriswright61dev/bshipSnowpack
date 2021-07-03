@@ -1,14 +1,9 @@
 import { gameDataObject } from "../data/data";
 import { playGame } from "./playGame";
-import {
-  // displayTurn,
-  // displayInfo,
-  displayPlayerInfo,
-  // displayComputerInfo,
-} from "../utilities/displayThings";
+import { displayPlayerInfo } from "../utilities/displayThings";
 export function shootTheCell(cell) {
   // const infoDisplay = document.querySelector("#info_display");
-  console.log("in the player shooting function");
+  // console.log("in the player shooting function");
 
   if (cell.classList.contains("tested")) {
     console.log("already done this one - try again");
@@ -50,7 +45,6 @@ export function shootTheCell(cell) {
   }
 
   gameDataObject.currentPlayer = "computer";
-  //   console.log("gameDataObject at end of shoot the cell", gameDataObject);
 
   playGame();
 }

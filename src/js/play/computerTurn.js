@@ -2,8 +2,6 @@ import { gameDataObject, playerCellsArray } from "../data/data";
 import { randMAbsolute } from "../utilities/utilities";
 import { displayTurn, displayComputerInfo } from "../utilities/displayThings";
 export function computerTurn() {
-  console.log("computer turn");
-
   let randomCell = randMAbsolute(playerCellsArray.length);
 
   if (playerCellsArray[randomCell].classList.contains("tested")) {

@@ -1,7 +1,6 @@
 import { gameDataObject } from "../data/data";
 import { gameOver } from "./gameOver";
 import {
-  displayTurn,
   displayInfo,
   displayPlayerInfo,
   displayComputerInfo,
@@ -53,35 +52,35 @@ export function checkForWin() {
     gameDataObject.DestroyerCellsShotbyComputer === 2 &&
     gameDataObject.DestroyerSunkbyComputer === false
   ) {
-    displayPlayerInfo("Your destroyer has been sunk");
+    displayComputerInfo("Your destroyer has been sunk");
     gameDataObject.DestroyerSunkbyComputer = true;
   }
   if (
     gameDataObject.SubmarineCellsShotbyComputer === 3 &&
     gameDataObject.SubmarineSunkbyComputer === false
   ) {
-    displayPlayerInfo("Your submarine has been sunk");
+    displayComputerInfo("Your submarine has been sunk");
     gameDataObject.SubmarineSunkbyComputer = true;
   }
   if (
     gameDataObject.CruiserCellsShotbyComputer === 3 &&
     gameDataObject.CruiserSunkbyComputer === false
   ) {
-    displayPlayerInfo("Your cruiser has been sunk");
+    displayComputerInfo("Your cruiser has been sunk");
     gameDataObject.CruiserSunkbyComputer = true;
   }
   if (
     gameDataObject.BattleshipCellsShotbyComputer === 4 &&
     gameDataObject.BattleshipSunkbyComputer === false
   ) {
-    displayPlayerInfo("Your battleship has been sunk");
+    displayComputerInfo("Your battleship has been sunk");
     gameDataObject.BattleshipSunkbyComputer = true;
   }
   if (
     gameDataObject.CarrierCellsShotbyComputer === 5 &&
     gameDataObject.CarrierSunkbyComputer === false
   ) {
-    displayPlayerInfo("Your carrier has been sunk");
+    displayComputerInfo("Your carrier has been sunk");
     gameDataObject.CarrierSunkbyComputer = true;
   }
 

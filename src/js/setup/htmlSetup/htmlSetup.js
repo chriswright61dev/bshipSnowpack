@@ -44,7 +44,4 @@ export function htmlSetup() {
 
   makeGridContainer(container1Data);
   makeGridContainer(container2Data);
-
-  console.log("document.body", document.body);
-  console.log("Document.body", Document.body);
 }
